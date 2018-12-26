@@ -4,6 +4,8 @@ import math
 import time
 from minitaur import Minitaur
 
+
+#123
 physicsClient = p.connect(p.GUI)
 p.setGravity(0,0,-10)
 minitaur = Minitaur(p)
