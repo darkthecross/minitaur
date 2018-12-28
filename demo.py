@@ -5,7 +5,6 @@ import time
 from minitaur import Minitaur
 
 
-#123
 physicsClient = p.connect(p.GUI)
 p.setGravity(0,0,-10)
 minitaur = Minitaur(p)
@@ -13,6 +12,7 @@ plane = p.loadURDF("data/plane.urdf")
 
 for i in range (10000):
     p.stepSimulation()
+    input()
     if i == 0:
         obs = minitaur.GetObservation()
         print(obs)
